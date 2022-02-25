@@ -1,0 +1,39 @@
+body,input{
+    font-family: 'Poppins', sans-serif;
+ }
+h3{
+    text-transform: capitalize;
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+#showProduct{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+
+
+/*
+=====================================
+ Responsive For All Media Device
+ ====================================
+  */
+
+@media(max-width : 991px){
+    #showProduct{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+}
+
+@media(max-width : 500px){
+    #showProduct{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+}
+}
